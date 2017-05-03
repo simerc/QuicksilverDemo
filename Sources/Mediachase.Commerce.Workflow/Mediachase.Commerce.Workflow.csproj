@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{413287F6-D606-4F42-BA25-4377A2C581F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mediachase.Commerce.Workflow</RootNamespace>
+    <AssemblyName>Mediachase.Commerce.Workflow</AssemblyName>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>..\..\EPiServerCommerceRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsNotAsErrors>612,618</WarningsNotAsErrors>
+    <DocumentationFile>bin\Debug\Mediachase.Commerce.Workflow.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>..\..\EPiServerCommerceRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release\Mediachase.Commerce.Workflow.XML</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsNotAsErrors>612,618</WarningsNotAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer">
+      <HintPath>..\..\packages\EPiServer.CMS.Core.10.2.0\lib\net45\EPiServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.ApplicationModules">
+      <HintPath>..\..\packages\EPiServer.Framework.10.2.0\lib\net45\EPiServer.ApplicationModules.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Business.Commerce">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\EPiServer.Business.Commerce.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Commerce.Internal.Migration">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\EPiServer.Commerce.Internal.Migration.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Configuration">
+      <HintPath>..\..\packages\EPiServer.CMS.Core.10.2.0\lib\net45\EPiServer.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Data">
+      <HintPath>..\..\packages\EPiServer.Framework.10.2.0\lib\net45\EPiServer.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Data.Cache">
+      <HintPath>..\..\packages\EPiServer.Framework.10.2.0\lib\net45\EPiServer.Data.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Enterprise">
+      <HintPath>..\..\packages\EPiServer.CMS.Core.10.2.0\lib\net45\EPiServer.Enterprise.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Events">
+      <HintPath>..\..\packages\EPiServer.Framework.10.2.0\lib\net45\EPiServer.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Framework">
+      <HintPath>..\..\packages\EPiServer.Framework.10.2.0\lib\net45\EPiServer.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.ImageLibrary">
+      <HintPath>..\..\packages\EPiServer.CMS.Core.10.2.0\lib\net45\EPiServer.ImageLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Licensing">
+      <HintPath>..\..\packages\EPiServer.Framework.10.2.0\lib\net45\EPiServer.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.LinkAnalyzer">
+      <HintPath>..\..\packages\EPiServer.CMS.Core.10.2.0\lib\net45\EPiServer.LinkAnalyzer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Web.WebControls">
+      <HintPath>..\..\packages\EPiServer.CMS.Core.10.2.0\lib\net45\EPiServer.Web.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.XForms">
+      <HintPath>..\..\packages\EPiServer.CMS.Core.10.2.0\lib\net45\EPiServer.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.BusinessFoundation">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.BusinessFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.BusinessFoundation.Data">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.BusinessFoundation.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Commerce">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Commerce.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Commerce.Marketing.Validators">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Commerce.Marketing.Validators.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Commerce.Plugins.Payment">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Commerce.Plugins.Payment.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Commerce.Plugins.Shipping">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Commerce.Plugins.Shipping.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Commerce.Website">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Commerce.Website.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.DataProvider">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.DataProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.FileUploader">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.FileUploader.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.MetaDataPlus">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.MetaDataPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Search">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Search.Extensions">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Search.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Search.LuceneSearchProvider">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Search.LuceneSearchProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.SqlDataProvider">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.SqlDataProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.WebConsoleLib">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.WebConsoleLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+    </Reference>
+    <Reference Include="nsoftware.IBizPay">
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\nsoftware.IBizPay.dll</HintPath>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\CartActivities\AdjustInventoryActivity.cs" />
+    <Compile Include="Activities\CartActivities\CartActivityBase.cs" />
+    <Compile Include="Activities\CartActivities\GetFulfillmentWarehouseActivity.cs" />
+    <Compile Include="Activities\CartActivities\ProcessHandlingActivity.cs" />
+    <Compile Include="Activities\CartActivities\ProcessPaymentActivity.cs" />
+    <Compile Include="Activities\CartActivities\RecordPromotionUsageActivity.cs" />
+    <Compile Include="Activities\CartActivities\ShipmentSplitActivity.cs" />
+    <Compile Include="Activities\OrderFormHelper.cs" />
+    <Compile Include="Activities\OrderGroupActivities\CalculateDiscountsActivity.cs" />
+    <Compile Include="Activities\OrderGroupActivities\CalculateDiscountsVNextActivity.cs" />
+    <Compile Include="Activities\OrderGroupActivities\CalculateTaxActivity.cs" />
+    <Compile Include="Activities\OrderGroupActivities\CalculateTotalsActivity.cs" />
+    <Compile Include="Activities\OrderGroupActivities\UpdateTotalsVNextActivity.cs" />
+    <Compile Include="Activities\OrderGroupActivities\CapturePaymentActivity.cs" />
+    <Compile Include="Activities\OrderGroupActivities\CheckInventoryActivity.cs" />
+    <Compile Include="Activities\OrderGroupActivities\OrderGroupActivityBase.cs" />
+    <Compile Include="Activities\OrderGroupActivities\ProcessShipmentsActivity.cs" />
+    <Compile Include="Activities\OrderGroupActivities\RemoveDiscountsActivity.cs" />
+    <Compile Include="Activities\OrderGroupActivities\RemoveDiscountsVNextActivity.cs" />
+    <Compile Include="Activities\OrderGroupActivities\ValidateLineItemsActivity.cs" />
+    <Compile Include="Activities\PurchaseOrderActivities\AdjustInstoreInventoryActivity.cs" />
+    <Compile Include="Activities\PurchaseOrderActivities\CalculatePurchaseOrderStatusActivity.cs" />
+    <Compile Include="Activities\PurchaseOrderActivities\CheckInstoreInventoryActivity.cs" />
+    <Compile Include="Activities\PurchaseOrderActivities\HandoffActivityBase.cs" />
+    <Compile Include="Activities\PurchaseOrderActivities\PurchaseOrderBaseActivity.cs" />
+    <Compile Include="Activities\ReturnFormActivities\CalculateExchangeOrderStatusActivity.cs" />
+    <Compile Include="Activities\ReturnFormActivities\CalculateReturnFormStatusActivity.cs" />
+    <Compile Include="Activities\ReturnFormActivities\CalculateReturnFormTaxActivity.cs" />
+    <Compile Include="Activities\ReturnFormActivities\CalculateReturnFormTotalsActivity.cs" />
+    <Compile Include="Activities\ReturnFormActivities\CreateExchangePaymentActivity.cs" />
+    <Compile Include="Activities\ReturnFormActivities\ReturnFormBaseActivity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="CartCheckoutActivityFlow.cs" />
+    <Compile Include="CartPrepareActivityFlow.cs" />
+    <Compile Include="CartPrepareVNextActivityFlow.cs" />
+    <Compile Include="CartValidateActivityFlow.cs" />
+    <Compile Include="CartValidateVNextActivityFlow.cs" />
+    <Compile Include="CheckAndReserveInstorePickupActivityFlow.cs" />
+    <Compile Include="POCalculateTotalsActivityFlow.cs" />
+    <Compile Include="POCalculateTotalsVNextActivityFlow.cs" />
+    <Compile Include="POCompleteShipmentActivityFlow.cs" />
+    <Compile Include="PORecalculateActivityFlow.cs" />
+    <Compile Include="PORecalculateVNextActivityFlow.cs" />
+    <Compile Include="POSaveChangesActivityFlow.cs" />
+    <Compile Include="POSplitShipmentsActivityFlow.cs" />
+    <Compile Include="ReturnFormCompleteActivityFlow.cs" />
+    <Compile Include="ReturnFormRecalculateActivityFlow.cs" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>

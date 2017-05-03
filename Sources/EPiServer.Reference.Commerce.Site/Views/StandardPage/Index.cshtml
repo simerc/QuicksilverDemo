@@ -1,0 +1,11 @@
+﻿@using Mediachase.Commerce.Orders
+@model EPiServer.Reference.Commerce.Site.Features.Shared.ViewModels.PageViewModel<EPiServer.Reference.Commerce.Site.Features.Standard.Pages.StandardPage>
+
+
+<div class="row category-page">
+    <b>@Html.PropertyFor(x => x.CurrentPage.Name)</b>
+    @foreach (var item in Model.CurrentPage.MainContentArea.Items)
+    {
+        @Html.PropertyFor(x => item as Discount)
+    }
+</div>

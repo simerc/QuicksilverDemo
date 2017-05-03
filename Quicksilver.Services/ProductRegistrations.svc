@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Quicksilver.Services.ProductRegistrations" CodeBehind="ProductRegistrations.svc.cs" %>
